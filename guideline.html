@@ -142,7 +142,57 @@
 						<span class="simple-button pressed">Pressed</span>
 						<span class="simple-button disabled">Disabled</span>
 					</div>
-					<div class="button-code">
+
+					<section class='code-editor'>
+						<div class='embed-nav'>
+							<ul>
+								<li><a class='' href='#css-box' id='css-link'>SCSS</a></li>
+							</ul>
+							<div class='logo-wrap'>
+								<a href='#' target='_blank' title='Edit on CodePen'>
+									Edit on codepen
+								</a>
+							</div>
+						</div>
+    <pre class='line-numbers'>
+      <code class='language-scss'>
+				.simple-button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 155px;
+				height: 40px;
+				border-radius: 2px;
+				font-size: 16px;
+				font-weight: 500;
+				color: #9d1e63;
+				background: white;
+				box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+				text-transform: uppercase;
+				cursor: pointer;
+				transition: all ease .25s;
+				margin: 0 20px;
+				}
+				.normal {
+				background-color: #ffffff;
+				}
+				.focused {
+				background-color: #EEEEEE;
+				}
+				.pressed {
+				background-color: #E0E0E0;
+				box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+				}
+				.disabled {
+				opacity: 0.65;
+				color: #757575;
+				cursor: default;
+				}
+			</code>
+    </pre>
+					</section>
+
+					<!--<div class="button-code">
 						<div class="button-code-header">SCSS</div>
 						<pre>
 							<code>
@@ -177,7 +227,7 @@
 								<span class="punctuation">}</span>
 							</code>
 						</pre>
-					</div>
+					</div>-->
 				</div>
 				<div class="paragraphs"><h2>Simple button blue</h2></div>
 				<div class="buttons-layout ">
