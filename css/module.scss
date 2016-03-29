@@ -47,6 +47,24 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.body {
+  width: 100%;
+  min-height: 200px;
+  padding: 30px 0 0;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #9d1f63;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  font-size: 3em;
+  color: white;
+  font-weight: 300;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
 .container {
   width: 100%;
   min-height: 40px;
@@ -143,25 +161,6 @@ table {
     overflow: hidden;
 
     .colors {
-      width: 100%;
-      height: auto;
-      min-height: 100px;
-      &-header {
-        width: 100%;
-        height: 100px;
-        background-color: #9d1f63;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 30px;
-        font-size: 3em;
-        color: white;
-        font-weight: 300;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-      }
-      &-body {
-        width: 100%;
-        padding: 30px 0 0 0;
         .pallets {
           width: 100%;
           min-height: 200px;
@@ -179,6 +178,7 @@ table {
             margin: 20px;
             border-radius: 0 0 2px 2px;
             overflow: hidden;
+
             &-header {
               width: 100%;
               height: 50px;
@@ -207,30 +207,13 @@ table {
             }
           }
         }
-      }
       .black {
         background-color: #212121;
       }
     }
   }
   .buttons {
-    &-header {
-      width: 100%;
-      height: 100px;
-      background-color: #9d1f63;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      padding: 30px;
-      font-size: 3em;
-      color: white;
-      font-weight: 300;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-    }
-    &-body {
-      width: 100%;
-      min-height: 200px;
-      padding: 30px 0 0 0;
+
       .buttons-layout {
         width: 100%;
         min-height: 200px;
@@ -488,27 +471,10 @@ table {
           }
         }
       }
-    }
   }
 }
 .icons {
-  &-header {
-    width: 100%;
-    height: 100px;
-    background-color: #9d1f63;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 30px;
-    font-size: 3em;
-    color: white;
-    font-weight: 300;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-  }
-  &-body {
-    width: 100%;
-    min-height: 200px;
-    padding: 30px 0 0 0;
+
     .icon-cards-wrapper {
       display: flex;
       justify-content: flex-start;
@@ -546,7 +512,6 @@ table {
         }
       }
     }
-  }
 }
 pre {
   overflow: auto;
@@ -593,24 +558,7 @@ pre {
   }
 }
 .menus {
-  &-header {
-    width: 100%;
-    height: 100px;
-    background-color: #9d1f63;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 30px;
-    font-size: 3em;
-    color: white;
-    font-weight: 300;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  }
-  &-body {
-    width: 100%;
-    min-height: 200px;
-    padding: 30px 0 0;
-  }
+
 }
 .blacked {
   background-color: #212121 !important;
@@ -725,4 +673,23 @@ pre {
   &:hover .menu-bubble{
     display: block;
   }
+}
+
+
+//Layout section
+
+.layout {
+
+}
+
+//Style section
+
+.style {
+
+}
+
+//Typography
+
+.typography {
+
 }

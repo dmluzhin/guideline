@@ -322,6 +322,24 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.body {
+  width: 100%;
+  min-height: 200px;
+  padding: 30px 0 0; }
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #9d1f63;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  font-size: 3em;
+  color: white;
+  font-weight: 300;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
+
 .container {
   width: 100%;
   min-height: 40px;
@@ -416,351 +434,300 @@ table {
     padding-bottom: 100px;
     box-sizing: border-box;
     overflow: hidden; }
-    .guideline-body .guideline-workplace .colors {
-      width: 100%;
-      height: auto;
-      min-height: 100px; }
-      .guideline-body .guideline-workplace .colors-header {
-        width: 100%;
-        height: 100px;
-        background-color: #9d1f63;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 30px;
-        font-size: 3em;
-        color: white;
-        font-weight: 300;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
-      .guideline-body .guideline-workplace .colors-body {
-        width: 100%;
-        padding: 30px 0 0 0; }
-        .guideline-body .guideline-workplace .colors-body .pallets {
-          width: 100%;
-          min-height: 200px;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          background-color: #f5f5f5;
-          margin: 30px 0 0 0;
-          padding: 0 100px; }
-          .guideline-body .guideline-workplace .colors-body .pallets .pallete-card {
-            width: 370px;
-            height: 500px;
-            box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-            background-color: #fafafa;
-            margin: 20px;
-            border-radius: 0 0 2px 2px;
-            overflow: hidden; }
-            .guideline-body .guideline-workplace .colors-body .pallets .pallete-card-header {
-              width: 100%;
-              height: 50px;
-              padding: 10px;
-              display: flex;
-              justify-content: flex-start;
-              align-items: center;
-              font-weight: 500;
-              font-size: 14px;
-              color: white;
-              border-radius: 2px 2px 0 0; }
-            .guideline-body .guideline-workplace .colors-body .pallets .pallete-card .pallete-color-line {
-              width: 100%;
-              height: 45px;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              padding: 0 10px;
-              color: #212121; }
-              .guideline-body .guideline-workplace .colors-body .pallets .pallete-card .pallete-color-line span {
-                font-size: 14px;
-                font-weight: 500;
-                max-width: 80%; }
-      .guideline-body .guideline-workplace .colors .black {
-        background-color: #212121; }
-  .guideline-body .buttons-header {
-    width: 100%;
-    height: 100px;
-    background-color: #9d1f63;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 30px;
-    font-size: 3em;
-    color: white;
-    font-weight: 300;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
-  .guideline-body .buttons-body {
-    width: 100%;
-    min-height: 200px;
-    padding: 30px 0 0 0; }
-    .guideline-body .buttons-body .buttons-layout {
+    .guideline-body .guideline-workplace .colors .pallets {
       width: 100%;
       min-height: 200px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
       background-color: #f5f5f5;
-      margin: 30px 0 24px 0;
-      padding: 0 15px; }
-      .guideline-body .buttons-body .buttons-layout .button-card {
-        width: 330px;
-        height: 300px;
-        background-color: #fafafa;
+      margin: 30px 0 0 0;
+      padding: 0 100px; }
+      .guideline-body .guideline-workplace .colors .pallets .pallete-card {
+        width: 370px;
+        height: 500px;
         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-        margin: 20px 0px;
-        margin-right: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        border-radius: 2px; }
-        .guideline-body .buttons-body .buttons-layout .button-card .simple-button {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 155px;
-          height: 40px;
-          border-radius: 2px;
-          font-size: 16px;
-          font-weight: 500;
-          color: #9d1e63;
-          background: white;
-          box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-          text-transform: uppercase;
-          cursor: pointer;
-          transition: all ease .25s;
-          margin: 0 20px; }
-        .guideline-body .buttons-body .buttons-layout .button-card .normal {
-          background-color: #ffffff; }
-        .guideline-body .buttons-body .buttons-layout .button-card .focused {
-          background-color: #EEEEEE; }
-        .guideline-body .buttons-body .buttons-layout .button-card .pressed {
-          background-color: #E0E0E0;
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
-        .guideline-body .buttons-body .buttons-layout .button-card .disabled {
-          opacity: 0.65;
-          color: #757575;
-          cursor: default; }
-        .guideline-body .buttons-body .buttons-layout .button-card .simple-button-blue {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 155px;
-          height: 40px;
-          border-radius: 2px;
-          font-size: 16px;
-          font-weight: 500;
-          color: white;
-          background: white;
-          box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-          text-transform: uppercase;
-          cursor: pointer;
-          transition: all ease .25s;
-          margin: 0 20px; }
-        .guideline-body .buttons-body .buttons-layout .button-card .normal-blue {
-          background-color: #1565C0; }
-        .guideline-body .buttons-body .buttons-layout .button-card .focused-blue {
-          background-color: #2196F3; }
-        .guideline-body .buttons-body .buttons-layout .button-card .pressed-blue {
-          background-color: #1565C0;
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
-        .guideline-body .buttons-body .buttons-layout .button-card .disabled-blue {
-          background-color: #1565C0;
-          opacity: 0.65;
-          color: white;
-          cursor: default; }
-        .guideline-body .buttons-body .buttons-layout .button-card .simple-button-burgundi {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 155px;
-          height: 40px;
-          border-radius: 2px;
-          font-size: 16px;
-          font-weight: 500;
-          color: white;
-          background: white;
-          box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-          text-transform: uppercase;
-          cursor: pointer;
-          transition: all ease .25s;
-          margin: 0 20px; }
-        .guideline-body .buttons-body .buttons-layout .button-card .normal-burgundi {
-          background-color: #9D1F63; }
-        .guideline-body .buttons-body .buttons-layout .button-card .focused-burgundi {
-          background-color: #AD1457; }
-        .guideline-body .buttons-body .buttons-layout .button-card .pressed-burgundi {
-          background-color: #9D1F63;
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
-        .guideline-body .buttons-body .buttons-layout .button-card .disabled-burgundi {
-          background-color: #9D1F63;
-          opacity: 0.65;
-          color: white;
-          cursor: default; }
-        .guideline-body .buttons-body .buttons-layout .button-card .plus-button {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 30px;
-          height: 30px;
-          border-radius: 2px;
-          box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-          cursor: pointer;
-          transition: all ease .25s;
-          margin: 0 20px;
-          font-size: 24px;
-          font-weight: 300;
-          background-color: #4CAF50;
-          color: white; }
-        .guideline-body .buttons-body .buttons-layout .button-card .plus-normal {
-          background-color: #4CAF50; }
-        .guideline-body .buttons-body .buttons-layout .button-card .plus-focused {
-          background-color: #66BB6A; }
-        .guideline-body .buttons-body .buttons-layout .button-card .plus-pressed {
-          background-color: #388E3C;
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
-        .guideline-body .buttons-body .buttons-layout .button-card .plus-disabled {
-          background-color: #4CAF50;
-          opacity: 0.45;
-          cursor: default; }
-        .guideline-body .buttons-body .buttons-layout .button-card .delete-button {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 30px;
-          height: 30px;
-          border-radius: 2px;
-          box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-          cursor: pointer;
-          transition: all ease .25s;
-          margin: 0 20px;
-          background-image: url("../images/delete.png");
-          background-size: 20px;
-          background-position: center center;
-          background-repeat: no-repeat; }
-        .guideline-body .buttons-body .buttons-layout .button-card .delete-normal {
-          background-color: #F44336; }
-        .guideline-body .buttons-body .buttons-layout .button-card .delete-focused {
-          background-color: #D32F2F; }
-        .guideline-body .buttons-body .buttons-layout .button-card .delete-pressed {
-          background-color: #E53935;
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
-        .guideline-body .buttons-body .buttons-layout .button-card .delete-disabled {
-          background-color: #F44336;
-          opacity: 0.45;
-          cursor: default; }
-        .guideline-body .buttons-body .buttons-layout .button-card .selector {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 0 10px; }
-          .guideline-body .buttons-body .buttons-layout .button-card .selector input[type="radio"] {
-            display: none; }
-          .guideline-body .buttons-body .buttons-layout .button-card .selector label {
-            display: inline-block; }
-          .guideline-body .buttons-body .buttons-layout .button-card .selector input[type=radio] + label {
-            position: relative;
-            width: 150px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 14px;
-            text-transform: uppercase;
-            font-weight: bold;
-            color: #212121;
-            text-align: center;
-            cursor: pointer;
-            transition: all .25s;
-            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-            background-color: #fafafa;
-            opacity: 0.6; }
-            .guideline-body .buttons-body .buttons-layout .button-card .selector input[type=radio] + label:hover {
-              background-color: #EEEEEE; }
-            .guideline-body .buttons-body .buttons-layout .button-card .selector input[type=radio] + label:active {
-              box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
-              background-color: #9d1f60;
-              color: white; }
-          .guideline-body .buttons-body .buttons-layout .button-card .selector label[for="radiobutton"] {
-            border-radius: 3px 0 0 3px; }
-          .guideline-body .buttons-body .buttons-layout .button-card .selector label[for="checkbox"] {
-            margin-left: 1px;
-            border-radius: 0 3px 3px 0; }
-          .guideline-body .buttons-body .buttons-layout .button-card .selector input[type="radio"]:checked + label {
-            z-index: 1;
-            background-color: #9d1f60;
-            color: white;
-            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-            opacity: 1; }
-      .guideline-body .buttons-body .buttons-layout .button-code {
-        width: 660px;
-        height: 300px;
         background-color: #fafafa;
-        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-        margin: 20px 0; }
-        .guideline-body .buttons-body .buttons-layout .button-code-header {
+        margin: 20px;
+        border-radius: 0 0 2px 2px;
+        overflow: hidden; }
+        .guideline-body .guideline-workplace .colors .pallets .pallete-card-header {
           width: 100%;
           height: 50px;
+          padding: 10px;
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          padding: 0 15px;
-          background-color: #9d1f60;
-          color: white;
-          font-size: 16px;
           font-weight: 500;
+          font-size: 14px;
+          color: white;
           border-radius: 2px 2px 0 0; }
-
-.icons-header {
-  width: 100%;
-  height: 100px;
-  background-color: #9d1f63;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 30px;
-  font-size: 3em;
-  color: white;
-  font-weight: 300;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
-.icons-body {
-  width: 100%;
-  min-height: 200px;
-  padding: 30px 0 0 0; }
-  .icons-body .icon-cards-wrapper {
+        .guideline-body .guideline-workplace .colors .pallets .pallete-card .pallete-color-line {
+          width: 100%;
+          height: 45px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 10px;
+          color: #212121; }
+          .guideline-body .guideline-workplace .colors .pallets .pallete-card .pallete-color-line span {
+            font-size: 14px;
+            font-weight: 500;
+            max-width: 80%; }
+    .guideline-body .guideline-workplace .colors .black {
+      background-color: #212121; }
+  .guideline-body .buttons .buttons-layout {
+    width: 100%;
+    min-height: 200px;
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
-    padding: 0 15px;
-    margin-bottom: 25px; }
-    .icons-body .icon-cards-wrapper .icon-card {
-      width: 150px;
-      height: 150px;
-      margin: 10px;
+    justify-content: center;
+    background-color: #f5f5f5;
+    margin: 30px 0 24px 0;
+    padding: 0 15px; }
+    .guideline-body .buttons .buttons-layout .button-card {
+      width: 330px;
+      height: 300px;
       background-color: #fafafa;
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      margin: 20px 0px;
+      margin-right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
       border-radius: 2px; }
-      .icons-body .icon-cards-wrapper .icon-card .icon-holder {
+      .guideline-body .buttons .buttons-layout .button-card .simple-button {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 80%; }
-        .icons-body .icon-cards-wrapper .icon-card .icon-holder img {
-          width: 64px;
-          height: 64px; }
-      .icons-body .icon-cards-wrapper .icon-card .icon-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 300;
+        width: 155px;
+        height: 40px;
+        border-radius: 2px;
         font-size: 16px;
-        padding: 0 15px;
+        font-weight: 500;
+        color: #9d1e63;
+        background: white;
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all ease .25s;
+        margin: 0 20px; }
+      .guideline-body .buttons .buttons-layout .button-card .normal {
+        background-color: #ffffff; }
+      .guideline-body .buttons .buttons-layout .button-card .focused {
+        background-color: #EEEEEE; }
+      .guideline-body .buttons .buttons-layout .button-card .pressed {
+        background-color: #E0E0E0;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+      .guideline-body .buttons .buttons-layout .button-card .disabled {
+        opacity: 0.65;
+        color: #757575;
+        cursor: default; }
+      .guideline-body .buttons .buttons-layout .button-card .simple-button-blue {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 155px;
+        height: 40px;
+        border-radius: 2px;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        background: white;
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all ease .25s;
+        margin: 0 20px; }
+      .guideline-body .buttons .buttons-layout .button-card .normal-blue {
+        background-color: #1565C0; }
+      .guideline-body .buttons .buttons-layout .button-card .focused-blue {
+        background-color: #2196F3; }
+      .guideline-body .buttons .buttons-layout .button-card .pressed-blue {
+        background-color: #1565C0;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+      .guideline-body .buttons .buttons-layout .button-card .disabled-blue {
+        background-color: #1565C0;
+        opacity: 0.65;
+        color: white;
+        cursor: default; }
+      .guideline-body .buttons .buttons-layout .button-card .simple-button-burgundi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 155px;
+        height: 40px;
+        border-radius: 2px;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        background: white;
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all ease .25s;
+        margin: 0 20px; }
+      .guideline-body .buttons .buttons-layout .button-card .normal-burgundi {
+        background-color: #9D1F63; }
+      .guideline-body .buttons .buttons-layout .button-card .focused-burgundi {
+        background-color: #AD1457; }
+      .guideline-body .buttons .buttons-layout .button-card .pressed-burgundi {
+        background-color: #9D1F63;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+      .guideline-body .buttons .buttons-layout .button-card .disabled-burgundi {
+        background-color: #9D1F63;
+        opacity: 0.65;
+        color: white;
+        cursor: default; }
+      .guideline-body .buttons .buttons-layout .button-card .plus-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 2px;
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: all ease .25s;
+        margin: 0 20px;
+        font-size: 24px;
+        font-weight: 300;
+        background-color: #4CAF50;
+        color: white; }
+      .guideline-body .buttons .buttons-layout .button-card .plus-normal {
+        background-color: #4CAF50; }
+      .guideline-body .buttons .buttons-layout .button-card .plus-focused {
+        background-color: #66BB6A; }
+      .guideline-body .buttons .buttons-layout .button-card .plus-pressed {
+        background-color: #388E3C;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+      .guideline-body .buttons .buttons-layout .button-card .plus-disabled {
+        background-color: #4CAF50;
+        opacity: 0.45;
+        cursor: default; }
+      .guideline-body .buttons .buttons-layout .button-card .delete-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 2px;
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: all ease .25s;
+        margin: 0 20px;
+        background-image: url("../images/delete.png");
+        background-size: 20px;
+        background-position: center center;
+        background-repeat: no-repeat; }
+      .guideline-body .buttons .buttons-layout .button-card .delete-normal {
+        background-color: #F44336; }
+      .guideline-body .buttons .buttons-layout .button-card .delete-focused {
+        background-color: #D32F2F; }
+      .guideline-body .buttons .buttons-layout .button-card .delete-pressed {
+        background-color: #E53935;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+      .guideline-body .buttons .buttons-layout .button-card .delete-disabled {
+        background-color: #F44336;
+        opacity: 0.45;
+        cursor: default; }
+      .guideline-body .buttons .buttons-layout .button-card .selector {
         width: 100%;
-        height: 20%;
-        text-transform: uppercase; }
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px; }
+        .guideline-body .buttons .buttons-layout .button-card .selector input[type="radio"] {
+          display: none; }
+        .guideline-body .buttons .buttons-layout .button-card .selector label {
+          display: inline-block; }
+        .guideline-body .buttons .buttons-layout .button-card .selector input[type=radio] + label {
+          position: relative;
+          width: 150px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: #212121;
+          text-align: center;
+          cursor: pointer;
+          transition: all .25s;
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+          background-color: #fafafa;
+          opacity: 0.6; }
+          .guideline-body .buttons .buttons-layout .button-card .selector input[type=radio] + label:hover {
+            background-color: #EEEEEE; }
+          .guideline-body .buttons .buttons-layout .button-card .selector input[type=radio] + label:active {
+            box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+            background-color: #9d1f60;
+            color: white; }
+        .guideline-body .buttons .buttons-layout .button-card .selector label[for="radiobutton"] {
+          border-radius: 3px 0 0 3px; }
+        .guideline-body .buttons .buttons-layout .button-card .selector label[for="checkbox"] {
+          margin-left: 1px;
+          border-radius: 0 3px 3px 0; }
+        .guideline-body .buttons .buttons-layout .button-card .selector input[type="radio"]:checked + label {
+          z-index: 1;
+          background-color: #9d1f60;
+          color: white;
+          box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+          opacity: 1; }
+    .guideline-body .buttons .buttons-layout .button-code {
+      width: 660px;
+      height: 300px;
+      background-color: #fafafa;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      margin: 20px 0; }
+      .guideline-body .buttons .buttons-layout .button-code-header {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 15px;
+        background-color: #9d1f60;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 2px 2px 0 0; }
+
+.icons .icon-cards-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  margin-bottom: 25px; }
+  .icons .icon-cards-wrapper .icon-card {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    border-radius: 2px; }
+    .icons .icon-cards-wrapper .icon-card .icon-holder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 80%; }
+      .icons .icon-cards-wrapper .icon-card .icon-holder img {
+        width: 64px;
+        height: 64px; }
+    .icons .icon-cards-wrapper .icon-card .icon-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 300;
+      font-size: 16px;
+      padding: 0 15px;
+      width: 100%;
+      height: 20%;
+      text-transform: uppercase; }
 
 pre {
   overflow: auto;
@@ -799,23 +766,6 @@ pre {
       color: #9b869c; }
     pre code .function {
       color: #cd6a51; }
-
-.menus-header {
-  width: 100%;
-  height: 100px;
-  background-color: #9d1f63;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 30px;
-  font-size: 3em;
-  color: white;
-  font-weight: 300;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
-.menus-body {
-  width: 100%;
-  min-height: 200px;
-  padding: 30px 0 0; }
 
 .blacked {
   background-color: #212121 !important;
