@@ -1,0 +1,15 @@
+{
+  "name": "guideline.git",
+  "version": "1.0.2",
+  "description": "Guideline for Academia Media.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmluzhin/guideline.git"
+  },
+  "author": "d.m.luzhin",
+  "license": "ISC",
+  "homepage": "https://github.com/dmluzhin/guideline#readme",
+  "dependencies": {
+  "gulp": "^3.8.11"
+  }
+}
