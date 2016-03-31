@@ -1,0 +1,21 @@
+{
+  "name": "guideline.git",
+  "description": "Guideline for Academia Media.",
+  "authors": [
+    "d.m.luzhin"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dmluzhin/guideline",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+	"normalize.css": "*",
+	"jquery": "2.*"
+  }
+}
