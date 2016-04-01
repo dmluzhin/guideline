@@ -63,6 +63,13 @@
       transition: all ease .25s;
     }
   }
+  ul {
+
+  }
+  li {
+    font-size: 16px;
+    list-style-image: url("../images/bullet.png");
+  }
   background-color: #fafafa;
   font-family: 'Roboto', sans-serif;;
   .side-navbar {
@@ -186,6 +193,10 @@ pre {
     min-width: 360px;
     width: 30%;
     padding: 15px 30px;
+
+    ul {
+      padding-bottom: 16px;
+    }
   }
   &-group {
     width: 65%;
@@ -279,6 +290,20 @@ pre {
   }
 }
 
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background-color: #fafafa;
+  margin: 16px;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #9d1f60;
+}
 
 
 /*Libs*/
