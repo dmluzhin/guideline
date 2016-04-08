@@ -29,36 +29,28 @@
     <pre class='line-numbers'>
       <code class='language-scss'>
 				.simple-button {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				width: 155px;
-				height: 40px;
-				border-radius: 2px;
-				font-size: 16px;
-				font-weight: 500;
-				color: #9d1e63;
-				background: white;
-				box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
-				text-transform: uppercase;
-				cursor: pointer;
-				transition: all ease .25s;
-				margin: 0 20px;
-				}
-				.normal {
-				background-color: #ffffff;
-				}
-				.focused {
-				background-color: #EEEEEE;
-				}
-				.pressed {
-				background-color: #E0E0E0;
-				box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-				}
-				.disabled {
-				opacity: 0.65;
-				color: #757575;
-				cursor: default;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 155px;
+						height: 40px;
+						border-radius: 2px;
+						font-size: 16px;
+						font-weight: 500;
+						color: #9d1e63;
+						background: white;
+						box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+						text-transform: uppercase;
+						cursor: pointer;
+						transition: all ease .25s;
+						margin: 0 25px;
+						&:hover {
+						background-color: #fafafa;
+						}
+						&:active {
+						box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+						background-color: #e0e0e0;
+						}
 				}
 			</code>
     </pre>
@@ -73,42 +65,46 @@
 			<span class="simple-button-blue pressed-blue">Pressed</span>
 			<span class="simple-button-blue disabled-blue">Disabled</span>
 		</div>
-		<div class="button-code">
-			<div class="button-code-header">SCSS</div>
-						<pre>
-							<code>
-								<span class="token">.simple-button-blue</span> <span class="punctuation">{</span>
-								<span class="property">display: </span><span class="function">flex;</span>
-								<span class="property">justify-content:</span> <span class="function">center;</span>
-								<span class="property">align-items: </span><span class="function">center;</span>
-								<span class="property">width: </span><span class="function">155px;</span>
-								<span class="property">height: </span><span class="function">40px;</span>
-								<span class="property">border-radius:</span> <span class="function">2px;</span>
-								<span class="property">font-size: </span><span class="function">16px;</span>
-								<span class="property">font-weight: </span><span class="function">500;</span>
-								<span class="property">color: </span><span class="function">#9d1e63;</span>
-								<span class="property">background:</span> <span class="function">white;</span>
-								<span class="property">box-shadow:</span><span class="function">0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 <br> rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);</span><br>
-								<span class="property">text-transform: </span> <span class="function">uppercase;</span>
-								<span class="property">cursor: </span><span class="function">pointer;</span>
-								<span class="property">transition: </span> <span class="function">all ease .25s;</span>
-								<span class="token">&:hover</span><span class="punctuation">{</span>
-								<span class="property">background-color:</span> <span class="function">#ffffff;</span>
-								<span class="punctuation">}</span>
-								<span class="token">&:active</span> <span class="punctuation">{</span>
-								<span class="property">box-shadow:</span> <span class="function">0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px <br> rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);</span>
-								<span class="property">background-color:</span> <span class="function">#E0E0E0;</span>
-
-								<span class="punctuation">}</span>
-								<span class="punctuation">}</span>
-
-								<span class="token">.disabled</span> <span class="punctuation">{</span>
-								<span class="property">opacity:</span> <span class="function">0.65;</span>
-								<span class="property">color:</span> <span class="function">#757575;</span>
-								<span class="punctuation">}</span>
-							</code>
-						</pre>
-		</div>
+		<section class='code-editor'>
+			<div class='embed-nav'>
+				<ul>
+					<li><a class='' href='#css-box' id='css-link'>SCSS</a></li>
+				</ul>
+				<div class='logo-wrap'>
+					<a href='#' target='_blank' title='Edit on CodePen'>
+						Edit on codepen
+					</a>
+				</div>
+			</div>
+    <pre class='line-numbers'>
+      <code class='language-scss'>
+				.simple-button-blue {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 155px;
+						height: 40px;
+						border-radius: 2px;
+						font-size: 16px;
+						font-weight: 500;
+						color: #fff;
+						background: #1565C0;
+						box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+						text-transform: uppercase;
+						cursor: pointer;
+						transition: all ease .25s;
+						margin: 0 25px;
+						&:hover {
+						background-color: #1565C0;
+						}
+						&:active {
+						box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+						background-color: #e0e0e0;
+						}
+				}
+			</code>
+    </pre>
+		</section>
 	</div>
 	<div class="paragraphs"><h2>Simple button burgundi</h2></div>
 	<div class="buttons-layout ">
@@ -118,42 +114,46 @@
 			<span class="simple-button-burgundi pressed-burgundi">Pressed</span>
 			<span class="simple-button-burgundi disabled-burgundi">Disabled</span>
 		</div>
-		<div class="button-code">
-			<div class="button-code-header">SCSS</div>
-						<pre>
-							<code>
-								<span class="token">.simple-button</span> <span class="punctuation">{</span>
-								<span class="property">display: </span><span class="function">flex;</span>
-								<span class="property">justify-content:</span> <span class="function">center;</span>
-								<span class="property">align-items: </span><span class="function">center;</span>
-								<span class="property">width: </span><span class="function">155px;</span>
-								<span class="property">height: </span><span class="function">40px;</span>
-								<span class="property">border-radius:</span> <span class="function">2px;</span>
-								<span class="property">font-size: </span><span class="function">16px;</span>
-								<span class="property">font-weight: </span><span class="function">500;</span>
-								<span class="property">color: </span><span class="function">#9d1e63;</span>
-								<span class="property">background:</span> <span class="function">white;</span>
-								<span class="property">box-shadow:</span><span class="function">0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 <br> rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);</span><br>
-								<span class="property">text-transform: </span> <span class="function">uppercase;</span>
-								<span class="property">cursor: </span><span class="function">pointer;</span>
-								<span class="property">transition: </span> <span class="function">all ease .25s;</span>
-								<span class="token">&:hover</span><span class="punctuation">{</span>
-								<span class="property">background-color:</span> <span class="function">#ffffff;</span>
-								<span class="punctuation">}</span>
-								<span class="token">&:active</span> <span class="punctuation">{</span>
-								<span class="property">box-shadow:</span> <span class="function">0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px <br> rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);</span>
-								<span class="property">background-color:</span> <span class="function">#E0E0E0;</span>
-
-								<span class="punctuation">}</span>
-								<span class="punctuation">}</span>
-
-								<span class="token">.disabled</span> <span class="punctuation">{</span>
-								<span class="property">opacity:</span> <span class="function">0.65;</span>
-								<span class="property">color:</span> <span class="function">#757575;</span>
-								<span class="punctuation">}</span>
-							</code>
-						</pre>
-		</div>
+		<section class='code-editor'>
+			<div class='embed-nav'>
+				<ul>
+					<li><a class='' href='#css-box' id='css-link'>SCSS</a></li>
+				</ul>
+				<div class='logo-wrap'>
+					<a href='#' target='_blank' title='Edit on CodePen'>
+						Edit on codepen
+					</a>
+				</div>
+			</div>
+    <pre class='line-numbers'>
+      <code class='language-scss'>
+				.simple-button-burgundi {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 155px;
+						height: 40px;
+						border-radius: 2px;
+						font-size: 16px;
+						font-weight: 500;
+						color: #fff;
+						background: #9D1F63;
+						box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+						text-transform: uppercase;
+						cursor: pointer;
+						transition: all ease .25s;
+						margin: 0 25px;
+						&:hover {
+						background-color: #AD1457;
+						}
+						&:active {
+						box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+						background-color: #9D1F63;
+						}
+				}
+			</code>
+    </pre>
+		</section>
 	</div>
 	<div class="paragraphs">
 		<h2>Plus button</h2>
@@ -171,41 +171,46 @@
 			<div class="plus-button plus-pressed rounded">+</div>
 			<div class="plus-button plus-disabled rounded">+</div>
 		</div>
-		<div class="button-code">
-			<div class="button-code-header">SCSS</div>
-						<pre>
-							<code>
-								<span class="token">.plus-button</span> <span class="punctuation">{</span>
-								<span class="property">display: </span><span class="function">flex;</span>
-								<span class="property">justify-content:</span> <span class="function">center;</span>
-								<span class="property">align-items: </span><span class="function">center;</span>
-								<span class="property">width: </span><span class="function">40px;</span>
-								<span class="property">height: </span><span class="function">40px;</span>
-								<span class="property">border-radius:</span> <span class="function">2px;</span>
-								<span class="property">font-size: </span><span class="function">30px;</span>
-								<span class="property">font-weight: </span><span class="function">300;</span>
-								<span class="property">color: </span><span class="function">white;</span>
-								<span class="property">background-color:</span> <span class="function">#4CAF50;</span>
-								<span class="property">box-shadow:</span><span class="function">0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 <br> rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);</span>
-								<span class="property">cursor: </span><span class="function">pointer;</span>
-								<span class="property">transition: </span> <span class="function">all ease .25s;</span>
-								<span class="token">&:hover</span><span class="punctuation">{</span>
-								<span class="property">background-color:</span> <span class="function">#66BB6A;</span>
-								<span class="punctuation">}</span>
-								<span class="token">&:active</span> <span class="punctuation">{</span>
-								<span class="property">box-shadow:</span> <span class="function">0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px <br> rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);</span>
-								<span class="property">background-color:</span> <span class="function">#388E3C;</span>
-
-								<span class="punctuation">}</span>
-								<span class="punctuation">}</span>
-
-								<span class="token">.disabled</span> <span class="punctuation">{</span>
-								<span class="property">opacity:</span> <span class="function">0.45;</span>
-								<span class="property">background-color:</span> <span class="function">#4CAF50;</span>
-								<span class="punctuation">}</span>
-							</code>
-						</pre>
-		</div>
+		<section class='code-editor'>
+			<div class='embed-nav'>
+				<ul>
+					<li><a class='' href='#css-box' id='css-link'>SCSS</a></li>
+				</ul>
+				<div class='logo-wrap'>
+					<a href='#' target='_blank' title='Edit on CodePen'>
+						Edit on codepen
+					</a>
+				</div>
+			</div>
+    <pre class='line-numbers'>
+      <code class='language-scss'>
+				.plus-button {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 30px;
+						height: 30px;
+						border-radius: 2px;
+						box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+						cursor: pointer;
+						transition: all ease .25s;
+						margin: 0 20px;
+						font-size: 24px;
+						font-weight: 300;
+						background-color: #4CAF50;
+						color: white;
+						&:hover {
+						background-color: #66bb6a;
+						box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px;
+						}
+						&:active {
+						background-color: #388e3c;
+						box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px;
+						}
+				}
+			</code>
+    </pre>
+		</section>
 	</div>
 	<div class="paragraphs">
 		<h2>Delete button</h2>
@@ -223,36 +228,45 @@
 			<div class="delete-button rounded delete-pressed"></div>
 			<div class="delete-button rounded delete-disabled"></div>
 		</div>
-		<div class="button-code">
-			<div class="button-code-header">SCSS</div>
-						<pre>
-							<code>
-								<span class="token">.delete-button</span> <span class="punctuation">{</span>
-								<span class="property">display: </span><span class="function">flex;</span>
-								<span class="property">justify-content:</span> <span class="function">center;</span>
-								<span class="property">align-items: </span><span class="function">center;</span>
-								<span class="property">width: </span><span class="function">40px;</span>
-								<span class="property">height: </span><span class="function">40px;</span>
-								<span class="property">border-radius:</span> <span class="function">2px;</span>
-								<span class="property">background-color:</span> <span class="function">#F44336;</span>
-								<span class="property">box-shadow:</span><span class="function">0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 <br> rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);</span>
-								<span class="property">cursor: </span><span class="function">pointer;</span>
-								<span class="property">transition: </span> <span class="function">all ease .25s;</span>
-								<span class="token">&:hover</span><span class="punctuation">{</span>
-								<span class="property">background-color:</span> <span class="function">#D32F2F;</span>
-								<span class="punctuation">}</span>
-								<span class="token">&:active</span> <span class="punctuation">{</span>
-								<span class="property">box-shadow:</span> <span class="function">0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px <br> rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);</span>
-								<br><span class="property">background-color:</span><span class="function">#E53935;</span>
-								<span class="punctuation">}</span>
-								<span class="punctuation">}</span>
-								<span class="token">.disabled</span> <span class="punctuation">{</span>
-								<span class="property">opacity:</span> <span class="function">0.45;</span>
-								<span class="property">background-color:</span> <span class="function">#F44336;</span>
-								<span class="punctuation">}</span>
-							</code>
-						</pre>
-		</div>
+		<section class='code-editor'>
+			<div class='embed-nav'>
+				<ul>
+					<li><a class='' href='#css-box' id='css-link'>SCSS</a></li>
+				</ul>
+				<div class='logo-wrap'>
+					<a href='#' target='_blank' title='Edit on CodePen'>
+						Edit on codepen
+					</a>
+				</div>
+			</div>
+    <pre class='line-numbers'>
+      <code class='language-scss'>
+				.delete-button {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 30px;
+						height: 30px;
+						border-radius: 2px;
+						box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+						cursor: pointer;
+						transition: all ease .25s;
+						margin: 0 20px;
+						background-image: url("../images/delete.png");
+						background-size: 20px;
+						background-position: center center;
+						background-repeat: no-repeat;
+						&:hover {
+						background-color: #D32F2F;
+						}
+						&:active {
+						background-color: #E53935;
+						box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+						}
+				}
+			</code>
+    </pre>
+		</section>
 	</div>
 	<div class="paragraphs">
 		<h2>Switcher</h2>
@@ -267,67 +281,62 @@
 				<label for="checkbox">Type two</label>
 			</div>
 		</div>
-		<div class="button-code">
-			<div class="button-code-header">SCSS</div>
-						<pre>
-							<code>
-								<span class="token">.selector</span> <span class="punctuation">{</span>
-								<span class="property">width: </span><span class="function">100%;</span>
-								<span class="property">height:</span> <span class="function">100%;</span>
-								<span class="property">display: </span><span class="function">flex;</span>
-								<span class="property">justify-content: </span><span class="function">center;</span>
-								<span class="property">align-items: </span><span class="function">40px;</span>
-								<span class="property">padding:</span> <span class="function">0 10px;</span>
-								<span class="token">input[type=radio]</span><span class="punctuation">{</span>
-								<span class="property">display:</span><span class="function">none;</span>
-								<span class="punctuation">}</span>
-								<span class="token">label</span><span class="punctuation">{</span>
-								<span class="property">display:</span><span class="function">inline-block;</span>
-								<span class="punctuation">}</span>
-								<span class="token">input[type=radio] + label</span><span class="punctuation">{</span>
-								<span class="property">position:</span> <span class="function">relative;</span>
-								<span class="property">width:</span> <span class="function">150px;</span>
-								<span class="property">height:</span> <span class="function">40px;</span>
-								<span class="property">display:</span> <span class="function">flex;</span>
-								<span class="property">justify-content:</span> <span class="function">center;</span>
-								<span class="property">align-items:</span> <span class="function">center;</span>
-								<span class="property">font-size:</span> <span class="function">14px;</span>
-								<span class="property">text-transform:</span> <span class="function">uppercase;</span>
-								<span class="property">font-weight:</span> <span class="function">bold;</span>
-								<span class="property">color:</span> <span class="function">#212121;</span>
-								<span class="property">text-align:</span> <span class="function">center;</span>
-								<span class="property">cursor:</span> <span class="function">pointer;</span>
-								<span class="property">transition:</span> <span class="function">all .25s;</span>
-								<span class="property">box-shadow:</span> <span class="function">0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);</span>
-								<span class="property">background-color:</span> <span class="function">;</span>
-								<span class="property">opacity:</span> <span class="function">#fafafa;</span>
-								<span class="property">:</span> <span class="function">0.6;</span>
-								<span class="token">&:hover</span> <span class="punctuation">{</span>
-								<span class="property">background-color:</span><span class="function">#EEEEEE;</span>
-								<span class="punctuation">}</span>
-								<span class="token">&:active</span> <span class="punctuation">{</span>
-								<span class="property">box-shadow:</span><span class="function">0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);</span>
-								<span class="property">background-color:</span><span class="function">#9d1f60;</span>
-								<span class="property">color:</span><span class="function">white;</span>
-								<span class="punctuation">}</span>
-								<span class="punctuation">}</span>
-								<span class="token">label[for="type1"]</span> <span class="punctuation">{</span>
-								<span class="property">border-radius:</span><span class="function">3px 0 0 3px;</span>
-								<span class="punctuation">}</span>
-								<span class="token">label[for="type2"]</span> <span class="punctuation">{</span>
-								<span class="property">border-radius:</span><span class="function">0 3px 3px 0;</span>
-								<span class="property">margin-left:</span><span class="function">1px;</span>
-								<span class="punctuation">}</span>
-								<span class="token">input[type="radio"]:checked + label</span> <span class="punctuation">{</span>
-								<span class="property">z-index:</span><span class="function">1;</span>
-								<span class="property">background-color:</span><span class="function">#9d1f60;</span>
-								<span class="property">color:</span><span class="function">white;</span>
-								<span class="property">box-shadow:</span><span class="function">0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);</span>
-								<span class="property">opacity:</span><span class="function">1;</span>
-								<span class="punctuation">}</span>
-								<span class="punctuation">}</span>
-							</code>
-						</pre>
-		</div>
+		<section class='code-editor'>
+			<div class='embed-nav'>
+				<ul>
+					<li><a class='' href='#css-box' id='css-link'>SCSS</a></li>
+				</ul>
+				<div class='logo-wrap'>
+					<a href='#' target='_blank' title='Edit on CodePen'>
+						Edit on codepen
+					</a>
+				</div>
+			</div>
+    <pre class='line-numbers'>
+      <code class='language-scss'>
+				.selector {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					input[type=radio] {
+					display: none;
+					}
+					label {
+					display: inline-block;
+					}
+					input[type=radio] + label {
+					position: relative;
+					width: 150px;
+					height: 40px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 14px;
+					text-transform: uppercase;
+					font-weight: 500;
+					color: #212121;
+					text-align: center;
+					cursor: pointer;
+					transition: all .25s;
+					border: 2px solid #9d1f60;
+					&:active {
+					background-color: #9d1f60;
+					color: white;
+					}
+					}
+					label[for="NAME-1"] {
+					border-radius: 2px 0 0 2px;
+					}
+					label[for="NAME-2"] {
+					border-radius: 0 2px 2px 0;
+					}
+					input[type="radio"]:checked + label {
+					background-color: #9d1f60;
+					color: white;
+					}
+				}
+			</code>
+    </pre>
+		</section>
 	</div>
 </section>
