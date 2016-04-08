@@ -305,6 +305,21 @@ pre {
   color: #9d1f60;
 }
 
+.download-section {
+  display: block;
+  padding: 16px 25px;
+}
+.download-link {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 16px;
+}
+.link-disabled {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
 
 /*Libs*/
 
