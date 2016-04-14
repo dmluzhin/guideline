@@ -456,7 +456,7 @@
 			<section class="icons header" id="icons">Icons</section>
 			<section class="icons body">
 				<div class="paragraphs">
-					<h2>Icons set White</h2>
+					<h2>Icons Set White</h2>
 					<p>В этом сете указаны все иконки на белом фоне, используемые в продукте.</p>
 				</div>
 				<div class="icon-cards-wrapper">
@@ -537,13 +537,19 @@
 						</div>
 						<div class="icon-title">Reupload</div>
 					</div>
+					<div class="icon-card">
+						<div class="icon-holder">
+							<img src="images/open.png"/>
+						</div>
+						<div class="icon-title">Open</div>
+					</div>
 				</div>
 				<div class="download-section">
 					<a href="https://github.com/dmluzhin/guideline/blob/gh-pages/build/images/downloads/white_set_png.rar?raw=true" class="download-link">Download PNG Set</a>
 					<a href="#" class="download-link link-disabled">Download SVG Set</a>
 				</div>
 				<div class="paragraphs">
-					<h2>Icon set Black</h2>
+					<h2>Icon Set Black</h2>
 					<p>В этом сете указаны все иконки на темном фоне, используемые в продукте.</p>
 				</div>
 				<div class="icon-cards-wrapper">
@@ -622,6 +628,12 @@
 							<img src="images/reupload-white.png"/>
 						</div>
 						<div class="icon-title">Reupload</div>
+					</div>
+					<div class="icon-card blacked">
+						<div class="icon-holder">
+							<img src="images/open_white.png"/>
+						</div>
+						<div class="icon-title">Open</div>
 					</div>
 				</div>
 				<div class="download-section">
@@ -712,6 +724,9 @@
 					<div class="icon-card">
 						<div class="icon-holder"><img src="images/text_set/input.png"/></div>
 						<div class="icon-title">Input</div>
+					</div><div class="icon-card">
+						<div class="icon-holder"><img src="images/open.png"/></div>
+						<div class="icon-title">Open</div>
 					</div>
 				</div>
 				<div class="download-section">
@@ -779,7 +794,31 @@
 				</div>
 			</section>
 			<section class="layout header" id="layout">Layout</section>
-			<section class="layout body"></section>
+			<section class="layout body">
+				<div class="module">
+					<div class="module-body">
+							<h2>Text Fields</h2>
+							<p>Text Field - редактируемое текстовое поле. В код встраивается, как обычный блок с атрибутом <span class="attribute">contenteditable</span>, что позволяет превратить данный блок в текстовое поле, заполняемое с клавиатуры.</p>
+							<p>В Text Field есть возможность вставлять практические любые текстовые элементы. Добавляются они с помощью элемента управления <a href="#tools">Tools</a>.</p>
+							<ul>Типы контента, допустимые в Text Field:
+								<li>Simple Text - Обычный текст, обернутый в тэг div</li>
+								<li>Bold Text - Обычный текст, обернутый в тэг strong</li>
+								<li>Italic Text - Обычный текст, обернутый в тэг em</li>
+								<li>Undeline Text - Текст с нижним подчеркиванием. Обычный текст оборачивается в тэг u</li>
+								<li>Bullet List - Список с буллитами</li>
+								<li>Numbered List - Нумерованный список</li>
+								<li>Table - Таблица</li>
+								<li>Popup - Встраевомый попап (высплывающее окно)</li>
+								<li>Lightbox</li>
+							</ul>
+					</div>
+					<div class="module-group">
+						<div class="image-box x1">
+							<div class="text-field shadow-dp2" contenteditable></div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="style header" id="style">Style</section>
 			<section class="style body">
 				<div class="module">
