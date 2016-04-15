@@ -79,3 +79,26 @@
     outline: none;
   }
 }
+
+.img-placeholder {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #757575;
+  border: 1px dashed;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-weight: 700;
+  &:after {
+    content: '+';
+    line-height: 0;
+    font-size: 60px;
+  }
+  &:hover {
+    color: #212121;
+  }
+}
