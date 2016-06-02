@@ -1,3 +1,95 @@
 .typography {
 
+  .verdana {
+    font-family: "Verdana", sans-serif;
+  }
+  .roboto {
+    font-family: Roboto, sans-serif;
+  }
+  .arial {
+    font-family: Arial, sans-serif;
+  }
+
+  &-table {
+    width: 96%;
+    table-layout: fixed;
+    font-size: 15px;
+    margin: 0 auto;
+    background-color: #fff;
+    caption {
+      padding: 16px;
+      font-size: 18px;
+      text-align: left;
+    }
+    tr{
+      border: 1px solid #E0E0E0;
+
+      &:hover {
+        background-color: #fafafa;
+        cursor: pointer;
+      }
+    }
+    th {
+      padding: 24px 16px;
+      text-align: left;
+      transition: all ease .25s;
+      font-size: 18px;
+      border: 1px solid #e0e0e0;
+      background-color: #F5F5F5;
+    }
+    td {
+      padding: 16px;
+      vertical-align: middle;
+      border: 1px solid #e0e0e0;
+    }
+
+    h1 {
+      font-size: 25px;
+      font-weight: bold;
+      color: #9d1f60;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 22px;
+      font-weight: bold;
+      color: #9d1f60;
+      margin-bottom: 0;
+    }
+    h3 {
+      font-size: 22px;
+      font-weight: normal;
+      color: #9d1f60;
+      margin-bottom: 0;
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: normal;
+      color: #9d1f60;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 10px;
+      padding: 0;
+    }
+    strong {
+      font-weight: bold;
+    }
+    ul {}
+    li {}
+  }
 }
+
+code {
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  background: #eee;
+  padding: 0 5px 2px;
+  border-radius: 4px;
+  position: relative;
+  margin: 0 3px 0 1px;
+  font-size: 90%;
+  color: black;
+  line-height: 1.5;
+}
+
