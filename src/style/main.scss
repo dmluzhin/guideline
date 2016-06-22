@@ -279,7 +279,9 @@ pre {
   cursor: default;
   pointer-events: none;
 }
-
+.x100 {
+  width: 100% !important;
+}
 /*Libs*/
 
 @import "lib/reset";
@@ -301,5 +303,5 @@ pre {
 @import "parts/buttons";
 @import "parts/codeditor";
 @import "parts/print";
-
+@import "parts/rec";
 
